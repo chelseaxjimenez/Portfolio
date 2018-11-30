@@ -1,0 +1,78 @@
+body {
+background-color: #f8e7dd;
+font-family: 'Questrial', sans-serif;
+}
+
+img {
+width: auto;
+max-width: 100%;
+height: auto;
+margin-left: auto;
+margin-right: auto;
+}
+
+.pagecontainer {
+  margin: auto;
+  width: 90vw;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  align-content: center;
+  align-items: center;
+}
+
+header {
+  height:100%;
+  background-size: 100%;
+  margin-left:auto;
+  margin-right:auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 2rem;
+  text-align: center;
+}
+
+/*Unordered list in the navbar is set to display flex with wrapping
+so at smaller size-mobile width--it wraps vertically in a row
+and at larger screen widths it spreads more horizontally.
+And justify-content centers flex blox content*/
+nav ul {
+  background-color: #fff;
+  display: flex;
+  list-style-type: none;
+  justify-content: center;
+  padding-top: .5rem;
+  padding-bottom: 1rem;
+  padding-right: 5rem;
+  border: dotted;
+  border-width: 1px;
+}
+/*Sets background color of nav list elements and their width and height*/
+nav ul li {
+  text-transform: uppercase;
+  font-size: 2em;
+  height: 2rem;
+  width: 12rem;
+  padding-top: .5rem;
+  text-align: center;
+}
+/*Takes away the default underlining of links and sets color of menu font*/
+nav ul li a {
+  text-decoration: none;
+  color: #000;
+  font-style: normal;
+  color: black;
+
+}
+/*Active psuedoclass is used so When you click on a menu item it turns orange.*/
+nav ul li:active {
+  background: #f37078;
+}
+/*This class should be applied to html differently on each page to let user know
+which page you are on--in this case the home page*/
+.locationmarker {
+  font-weight: bold;
+}
