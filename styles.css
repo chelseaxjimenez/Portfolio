@@ -1,5 +1,5 @@
 body {
-background-color: #f8e7dd;
+background-image: radial-gradient(#d6d4c1, #b8be9c);
 font-family: 'Questrial', sans-serif;
 }
 
@@ -9,6 +9,32 @@ max-width: 100%;
 height: auto;
 margin-left: auto;
 margin-right: auto;
+}
+
+.container {
+    position: relative;
+    text-align: center;
+    color: black;
+    width: 20rem;
+}
+
+/* resize images */
+.container img {
+    width: 100%;
+    height: auto;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.bottom-right {
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
 }
 
 .pagecontainer {
@@ -31,8 +57,17 @@ header {
   margin-right:auto;
   background-position: center;
   background-repeat: no-repeat;
-  padding: 2rem;
+
   text-align: center;
+  font-family: 'Sacramento', cursive;
+}
+
+h1 {
+  background-color: rgba(255,255,255,0);
+    text-shadow: 1px 1px 2px #e6d6e2;
+    font-size: 2em;
+    font-style: none;
+    font-color: #000;
 }
 
 /*Unordered list in the navbar is set to display flex with wrapping
@@ -40,20 +75,17 @@ so at smaller size-mobile width--it wraps vertically in a row
 and at larger screen widths it spreads more horizontally.
 And justify-content centers flex blox content*/
 nav ul {
-  background-color: #fff;
   display: flex;
   list-style-type: none;
   justify-content: center;
   padding-top: .5rem;
   padding-bottom: 1rem;
-  padding-right: 5rem;
-  border: dotted;
-  border-width: 1px;
+  padding-right: 4rem;
 }
 /*Sets background color of nav list elements and their width and height*/
 nav ul li {
   text-transform: uppercase;
-  font-size: 2em;
+  font-size: 1.5em;
   height: 2rem;
   width: 12rem;
   padding-top: .5rem;
