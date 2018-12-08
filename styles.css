@@ -3,6 +3,27 @@ body {
   font-family: 'Questrial', sans-serif;
 }
 
+p {
+  margin:.4em;
+  text-align: center;
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+
+.image-container-grid {
+  display: grid;
+  grid-template-columns: 5fr 5fr;
+  grid-template-rows: 5fr 5fr 5fr;
+  grid-gap: 1rem;
+  max-width: 80vw;
+  margin: auto;
+  align-content: center;
+}
+
+.image:hover {
+  opacity: 0.1;
+}
+
 img {
   width: 70%;
   max-width: 80rem;
@@ -18,6 +39,8 @@ a {
 }
 
 footer {
+  font-size: 13px;
+  margin:.1em;
   text-align: center;
 }
 
@@ -25,7 +48,7 @@ footer {
   position: relative;
   text-align: center;
   color: black;
-  width: 20rem;
+  width: 10rem;
 }
 
 /* resize images */
@@ -34,6 +57,11 @@ footer {
   height: auto;
   display: flex;
   justify-content: center;
+}
+
+h2 {
+  text-align: center;
+  color: #2f425d;
 }
 
 .centered {
@@ -46,13 +74,9 @@ footer {
 }
 
 .pagecontainer {
-  text-align: center;
-  align-content: center;
-  border-color: #766475;
-  border-style: solid;
-  margin: auto;
-  border-left: 3px;
-  border-right: 3px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 90vw;
 }
 
 .bottom-right {
@@ -147,6 +171,19 @@ nav ul li:active {
 
 nav ul li:hover {
   background-image: linear-gradient(#fde9f0, #f9a4a4);
+}
+
+
+@media only screen and (max-width: 600px) {
+  .image-container-grid {
+  display: block;
+}
+
+p {
+  margin:.4em;
+  text-align: center;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 /*This class should be applied to html differently on each page to let user know
